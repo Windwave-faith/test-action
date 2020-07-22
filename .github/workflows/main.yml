@@ -27,7 +27,7 @@ jobs:
         which pwsh
         SCOOP="${HOME}/scoop/apps/current"
         echo $SCOOP | xargs -I{} echo "::set-env name=SCOOP::{}"
-        git clone "https://github.com/lukesampson/scoop.git" ${SCOOP}
+        #git clone "https://github.com/lukesampson/scoop.git" ${SCOOP}
 
     # Runs a set of commands using the runners shell
     - name: Test Scoop
