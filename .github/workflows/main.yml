@@ -32,6 +32,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Test Scoop
       run: |
-        echo ${SCOOP}
+        SCOOP="${HOME}"
         pwsh -Command "iwr -useb get.scoop.sh | iex"
         pwsh -File "${SCOOP}/bin/scoop.ps1 help"
