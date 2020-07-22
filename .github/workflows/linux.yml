@@ -35,8 +35,8 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Test Scoop
       run: |
-        SCOOP="${HOME}/scoop"
-        SCOOP_HOME="${SCOOP}/apps/scoop/current"
+        export SCOOP="${HOME}/scoop"
+        export SCOOP_HOME="${SCOOP}/apps/scoop/current"
         echo "::set-env name=SCOOP_HOME::${SCOOP_HOME}"
         git clone "https://github.com/lukesampson/scoop.git" ${SCOOP_HOME}
         ls -lsa ${SCOOP_HOME}
