@@ -18,5 +18,5 @@ steps:
   displayName: 'Setup Scoop'
 
 - script: |
-    scoop help
+    %USERPROFILE%\scoop\apps\scoop\current\bin\scoop help
   displayName: 'Run a multi-line script'
