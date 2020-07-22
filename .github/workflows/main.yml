@@ -5,6 +5,9 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
+  push:
+    branches: [ master ]
+    
   pull_request:
     branches: [ master ]
 
@@ -33,4 +36,5 @@ jobs:
     - name: Test Scoop
       run: |
         powershell "iwr -useb get.scoop.sh | iex"
-        scoop help
+        %USERPROFILE%\scoop\shims\scoop.ps1 help
+        
