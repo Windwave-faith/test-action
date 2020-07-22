@@ -25,8 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Setup Scoop
       env: 
-        SCOOP: ${HOME}/scoop
-        SCOOP_HOME: ${{ env.SCOOP }}/current
+        SCOOP: ${SCOOP_HOME}/scoop/current
       run: |
         which pwsh
         git clone "https://github.com/lukesampson/scoop.git" ${SCOOP_HOME}
