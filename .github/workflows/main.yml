@@ -33,4 +33,4 @@ jobs:
     - name: Test Scoop
       run: |
         echo ${SCOOP}
-        pwsh -File ${SCOOP}/bin/scoop.ps1 help
+        pwsh -File ${SCOOP}/bin/install.ps1
