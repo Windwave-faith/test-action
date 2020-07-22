@@ -33,4 +33,4 @@ jobs:
     - name: Test Scoop
       run: |
         echo ${SCOOP}
-        curl -o - get.scoop.sh | pwsh
+        pwsh - "iwr -useb get.scoop.sh | iex"
