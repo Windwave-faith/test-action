@@ -36,5 +36,5 @@ jobs:
     - name: Test Scoop
       run: |
         powershell "iwr -useb get.scoop.sh | iex"
-        ${HOME}\scoop\shims\scoop.ps1 help
+        %HOME%\scoop\shims\scoop.ps1 help
         
