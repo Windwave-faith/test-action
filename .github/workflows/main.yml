@@ -33,4 +33,5 @@ jobs:
     - name: Test Scoop
       run: |
         echo ${SCOOP}
-        pwsh - "iwr -useb get.scoop.sh | iex"
+        pwsh -Command "iwr -useb get.scoop.sh | iex"
+        pwsh -File "${SCOOP}/bin/scoop.ps1 help"
